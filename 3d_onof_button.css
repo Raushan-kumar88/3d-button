@@ -1,0 +1,45 @@
+body{
+    background-color: #ececec;
+    padding: 0;
+    margin: 0;
+}
+input[type="checkbox"]
+{
+    height: 200px;
+    width: 200px;
+    -webkit-appearance:none ;
+    /* background-color: blue; */
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                10px 10px 15px rgba(70, 70, 70, 0.12);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+input[type="checkbox"]:after
+{
+    font-family:FontAwesome ;
+    content: '\f011' ;
+    color: red;
+    font-size: 100px;
+}
+input[type="checkbox"]:checked
+{
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+                 10px 10px 15px rgba(70, 70, 70, 0.12),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+                inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+                
+}
+
+input[type="checkbox"]:checked:after
+{
+    color: #15e38a;
+
+}
